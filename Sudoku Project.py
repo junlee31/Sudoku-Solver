@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[35]:
+
 
 
 board = [
@@ -15,9 +15,6 @@ board = [
     [1,2,0,0,0,7,4,0,0],
     [0,4,9,2,0,6,0,0,7]  
 ]
-
-
-# In[36]:
 
 
 def print_board(bo):
@@ -36,15 +33,6 @@ def print_board(bo):
                 print(str(bo[i][j]) + " ", end = '')
 
 
-# In[24]:
-
-
-print_board(board)
-
-
-# In[27]:
-
-
 def find_empty(bo):
     
     for i in range(len(bo)):
@@ -52,9 +40,6 @@ def find_empty(bo):
             if bo[i][j] == 0:
                 return (i, j)
     return None
-
-
-# In[28]:
 
 
 def check(bo, num, pos):
@@ -76,12 +61,6 @@ def check(bo, num, pos):
                 return False
     
     return True
-        
-    
-    
-
-
-# In[29]:
 
 
 def solve(bo):
@@ -101,74 +80,9 @@ def solve(bo):
             
             bo[row][col] = 0
             
-    return False
-        
+    return False      
 
 
-# In[31]:
-
-
-print_board(board)
-print("________________________")
-solve(board)
-print_board(board)
-
-
-# In[32]:
-
-
-print_board(board)
-
-
-# In[33]:
-
-
-solve(board)
-
-
-# In[34]:
-
-
-print_board(board)
-
-
-# In[37]:
-
-
-print_board(board)
-
-
-# In[38]:
-
-
-solve(board)
-
-
-# In[39]:
-
-
-print_board(board)
-
-
-# In[2]:
-
-
-get_ipython().system(' pip install pygame')
-
-
-# In[6]:
-
-
-get_ipython().system(' pip install solver')
-
-
-# In[7]:
-
-
-
-
-
-# In[ ]:
 
 
 
