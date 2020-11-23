@@ -13,7 +13,6 @@ I created 4 functions:
             - In this function, we check to see if the solutions the algorithm has found are valid or not. 
     4. solve:
             - Lastly, we take the functions above and create a solve function which solves your board. 
-
 Example #1:
 Board Without Answers: (0 represents empty spaces)
 7 8 0 |4 0 0 |1 2 0
