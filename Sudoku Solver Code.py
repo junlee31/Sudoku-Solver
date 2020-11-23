@@ -17,9 +17,6 @@ board = [
 ]
 
 
-# In[36]:
-
-
 def print_board(bo):
     
     for i in range(len(bo)):
@@ -36,15 +33,6 @@ def print_board(bo):
                 print(str(bo[i][j]) + " ", end = '')
 
 
-# In[24]:
-
-
-print_board(board)
-
-
-# In[27]:
-
-
 def find_empty(bo):
     
     for i in range(len(bo)):
@@ -52,9 +40,6 @@ def find_empty(bo):
             if bo[i][j] == 0:
                 return (i, j)
     return None
-
-
-# In[28]:
 
 
 def check(bo, num, pos):
@@ -77,13 +62,7 @@ def check(bo, num, pos):
     
     return True
         
-    
-    
-
-
-# In[29]:
-
-
+       
 def solve(bo):
     
     find = find_empty(bo)
@@ -102,74 +81,4 @@ def solve(bo):
             bo[row][col] = 0
             
     return False
-        
-
-
-# In[31]:
-
-
-print_board(board)
-print("________________________")
-solve(board)
-print_board(board)
-
-
-# In[32]:
-
-
-print_board(board)
-
-
-# In[33]:
-
-
-solve(board)
-
-
-# In[34]:
-
-
-print_board(board)
-
-
-# In[37]:
-
-
-print_board(board)
-
-
-# In[38]:
-
-
-solve(board)
-
-
-# In[39]:
-
-
-print_board(board)
-
-
-# In[2]:
-
-
-get_ipython().system(' pip install pygame')
-
-
-# In[6]:
-
-
-get_ipython().system(' pip install solver')
-
-
-# In[7]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+       
